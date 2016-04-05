@@ -1,28 +1,16 @@
 <html ng-app="myApp">
     <head>
         <title>Example - 1</title>
-        <script src="../bower_components/angular/angular.min.js"></script>
-        <script src="../bower_components/angular-messages/angular-messages.min.js"></script>
-        <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <script src="../../bower_components/angular/angular.min.js"></script>
+        <script src="../../bower_components/angular-messages/angular-messages.min.js"></script>
+        <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
     </head>
     
     <body>        
         <script src="app.js"></script>
         <div id='example-1' ng-controller='myController'>
-            <h1>{{sampleText}}</h1>
+            <div> Simple hello </div>
         </div>
-        <div id='formMessages'>
-            <form name="myForm">
-              <label>
-                Enter text:
-                <input type="email" ng-model="field" name="myField" required maxlength="15" />
-              </label>
-              <div ng-messages="myForm.myField.$error" role="alert">
-                <div ng-message="required">Please enter a value for this field.</div>
-                <div ng-message="email">This field must be a valid email address.</div>
-                <div ng-message="maxlength">This field can be at most 15 characters long.</div>
-              </div>
-            </form>
-        </div>
+        
     </body>
 </html>
