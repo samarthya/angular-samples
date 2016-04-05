@@ -8,7 +8,7 @@ Dependencies
 
 I have used bower to manage dependencies and the steps I have used are as follows
 
-**1. bower init **
+*1. bower init *
 
 Allows to create the bower.json that has all the dependencies I would use.
 
