@@ -1,12 +1,32 @@
-var myApp = angular.module('myApp', ['ngMessages']);
+var myApp = angular.module('myApp', ['ngRoute', 'ngMessages']);
 
-myApp.controller('myController', ['$scope', '$log', '$timeout', '$location', function ($scope, $log, $timeout, $location) {
-    'use strict';
+<!-- ngRoute module provides routing and deeplinking services and directives for angular apps-->
+myApp.config(function($routeProvider) {
     
-    $scope.sampleText = " This is a sample text information using Angular way of life";
+    $routeProvider.when('/', {
+       templateUrl: 'templates/main.html',
+        controller: 'example2'
+    });
     
-    $log.info(" sample log information");
+    
+    $routeProvider.when('/second', {
+       templateUrl: 'templates/second.html',
+        controller: 'example2.secondController'
+    });
+})
+
+myApp.controller('example2', ['$scope', '$log', '$timeout', '$location', function ($scope, $log, $timeout, $location) {
+    'use strict';  
+        
+    $log.info(" Example 2! ");
     $log.info($location.path());
     
+    $scope.identifier = "Main";
+}]);
+
+myApp.controller('example2.secondController', ['$scope', '$log', '$timeout', '$location', function ($scope, $log, $timeout, $location) {
+    'use strict';
+    $log.info($location.path());    
+    $scope.identifier = "Second";
     
 }]);

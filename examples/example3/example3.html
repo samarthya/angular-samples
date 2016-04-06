@@ -1,4 +1,4 @@
-<html ng-app="myApp">
+<html ng-app="example3">
 	<head>
 		<title>Example - 2</title>        
         <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
@@ -12,12 +12,10 @@
                 <script src="../../bower_components/angular-messages/angular-messages.min.js"></script>
                 <script src="../../bower_components/angular-route/angular-route.min.js"></script>
                 <script src="app.js"></script>
-				<div class="jumbotron" role="main">
-					<div>Here in I have used the <b>ng-view</b> element and the routing capabilities that will be used.</div>
-					<div>
-						<p>NG-ROUTE module provides routing and deeplinking services and directives for angular apps</p>
-					</div>
-
+				
+                <div class="jumbotron" role="main">
+					<!-- The main content if any -->
+                    This example shows how to call a Service and shows the content of a service as well.
 				</div>
 
 				<ul class="nav nav-tabs" role="tablist">
@@ -35,5 +33,6 @@
 				<div class="container">
                     <div ng-view></div>
 				</div>
+                
 			</body>
 		</html>

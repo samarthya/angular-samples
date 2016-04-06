@@ -1,28 +1,28 @@
 {
-  "name": "angular-samples",
-  "homepage": "https://github.com/samarthya/angular-samples",
-  "authors": [
-    "Saurabh Sharma <saurabh.sharma@pb.com>"
-  ],
-  "description": "Sample examples of angular js",
-  "keywords": [
-    "ANGULARJS"
-  ],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "angular": "angularjs#~1.5.2",
-    "angular-messages": "^1.5.2",
-    "bootstrap": "^3.3.6",
-    "angular-route": "^1.5.3"
-  },
-  "resolutions": {
-    "angular": "~1.5.2"
-  }
+    "name": "angular-samples",
+    "homepage": "https://github.com/samarthya/angular-samples",
+    "authors": [
+        "Saurabh Sharma <saurabh.sharma@pb.com>"
+    ],
+    "description": "Sample examples of angular js",
+    "keywords": [
+        "ANGULARJS"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "angularjs#~1.5.2",
+        "angular-messages": "~1.5.4-build.4713+sha.fad6c7c",
+        "bootstrap": "^3.3.6",
+        "angular-route": "^1.5.3"
+    },
+    "resolutions": {
+        "angular": "~1.5.2"
+    }
 }
