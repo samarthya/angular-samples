@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <!-- Page that shall host all the samples -->
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Examples</title>
-        <!-- Link information -->
-        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-        <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">        
-        <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-        <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-    </head>
-    <body class="container-fluid">
-        <div class="">
-            <p>This should contain all the examples that I create while playing with Angular.</p>
-        </div>
+
+<head>
+    <meta charset="utf-8">
+    <!-- To ensure proper rendering and touch zooming, add the viewport meta tag to your -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Examples</title>
+    <!-- Link information -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+
+<body class="container info">
+    <nav class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home</a></li>
+        <li role="presentation"><a href="html-sample.html">Sample</a></li>
+        <li role="presentation"><a href="example1/example1.html">Example1</a></li>
+        <li role="presentation"><a href="example2/example2.html">Example2</a></li>
+        <li role="presentation"><a href="example3/example3.html">Example3</a></li>
+    </nav>
+    <br/>
+    <div class="well">
+        <p>This is a landing page that will contain all the examples that I create while playing with Angular and bootstrap.</p>
+        <p>I have intentionally cluttered it up using multitude of HTML5 and angular code, which in later examples would evolve into a much cleaner approach.</p>
+    </div>
+
+    <div class="jumbotron">
         <ul>
-        <li><a href="example1/example1.html">Example 1:</a><p>Example one handles the timeout and shows how a scope memeber can be referenced in the view.</p></li>
-        <li><a href="example2/example2.html">Example 2:</a><p>This example uses the location and routing capabilities of Angular.</p></li>
-        <li><a href="example3/example3.html">Example 3:</a><p>This is an example wherein I create a singleton service that can be used anywhere. It talks about service call and returning values from scope as well.</p></li>
+            <li><a href="html-sample.html">HTML5:</a>
+                <p>A dummy HTML5 page that I created to check my understanding of multiple HTML tags.</p>
+            </li>
+            <li><a href="example1/example1.html">Example 1:</a>
+                <p>Example one handles the timeout and shows how a scope memeber can be referenced in the view.</p>
+            </li>
+            <li><a href="example2/example2.html">Example 2:</a>
+                <p>This example uses the location and routing capabilities of Angular.</p>
+            </li>
+            <li><a href="example3/example3.html">Example 3:</a>
+                <p>This is an example wherein I create a singleton service that can be used anywhere. It talks about service call and returning values from scope as well.</p>
+            </li>
         </ul>
-    </body>
+    </div>
+    <footer>
+        <p>&copy; 2016 Samarthya. All rights reserved.</p>
+    </footer>
+</body>
+
 </html>
