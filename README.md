@@ -26,3 +26,7 @@ Today I added service script and learned something about angular service's provi
 >**All Services are singletons;** they get instantiated once per app. They can be of any type, whether it be a primitive, object literal, function, or even an instance of a custom type.
 
 >The value, factory, service, constant, and provider methods are all providers. They teach the Injector how to instantiate the Services.
+
+### 7th March 2016
+
+Today I created directives, for my simple use case of adding a footer and the navigation bar.

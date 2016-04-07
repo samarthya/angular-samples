@@ -1,0 +1,16 @@
+section.left {
+    position: absolute;  
+    float: left;
+      
+}
+
+section.right {
+    position: absolute;  
+    float: right;
+      
+}
+
+section.bottom { 
+    position: absolute;
+    top: 90%;
+}
