@@ -20,7 +20,7 @@ Today I will be creating a _new structure_ for the source code and commit the ch
 
 Today I added service script and learned something about angular service's provider and factories.
 
-...To quote 
+# To quote 
 
 
 >**All Services are singletons;** they get instantiated once per app. They can be of any type, whether it be a primitive, object literal, function, or even an instance of a custom type.
