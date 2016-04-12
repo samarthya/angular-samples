@@ -1,11 +1,9 @@
-section.left {
-    position: absolute;  
+section.left {    
     float: left;
       
 }
 
-section.right {
-    position: absolute;  
+section.right {    
     float: right;
       
 }

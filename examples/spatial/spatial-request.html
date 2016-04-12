@@ -7,35 +7,60 @@
     <!-- To ensure proper rendering and touch zooming, add the viewport meta tag to your -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spatial</title>
+    
     <!-- Link information -->
     <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
     <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script> 
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
     <link href="spatial.css">
 </head>
 
-<body class="container info">
-    <div ng-app="spatial">
-        <my-navigation></my-navigation>
+<body ng-app="spatial" class="container">
+    <div class="page-header">
+        <!--        <return-menu-header menu-name="MyValue"></return-menu-header>-->
+        <return-menu-only></return-menu-only>
+        
+        
         <section>
             <!-- Left and right sections here -->
-            <section id="left" class="left">Navigation Roots</section>
-            <section id="right" class="right">Input requests</section>
+            <section id="serve" class="left panel panel-default well">Navigation Roots</section>
+            <section id="right" class="right panel panel-warning">Input requests</section>
         </section>
-        <section class="bottom">
-            <header><h3>Global information</h3><hr/></header>
-            <body><div><global-credentials></global-credentials></div>
-                <div ng-if="user.name !== ''">Are you sure, you are {{user.name}}?</div>
-            </body>
+
+        <section class="bottom well">
+
+            <div>
+                <header>
+                    <h3>Global information</h3>
+                    <hr/>
+                </header>
+
+                    <div class="panel panel-default well well-lg">
+                        <global-credentials></global-credentials>
+                    </div>
+<!--                    <div ng-if="user.name !== ''">Are you sure, you are {{user.name}}?</div>-->
+            </div>
+
+
+            <div class="panel panel-default well">
+                <global-adaptive-credentials></global-adaptive-credentials>
+            </div>
         </section>
         <!-- directive: my-copyright -->
     </div>
-    
+
     <!-- All Scripts go here -->
     <script src="../../bower_components/angular/angular.js"></script>
     <script src="../../bower_components/angular-messages/angular-messages.min.js"></script>
     <script src="../../bower_components/angular-route/angular-route.min.js"></script>
-    <script src="app.js"></script>        
+    <script src='../directives/js/header.js'></script>
+    <!-- Spectrum Spatial services implementation -->
+    <script src="services/spectrum-services.js"></script>
+    <script src="app.js"></script>
+    <!-- information ends -->
+    
+
 </body>
+
 </html>

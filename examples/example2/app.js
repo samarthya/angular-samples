@@ -8,6 +8,10 @@ myApp.config(function($routeProvider) {
         controller: 'example2'
     });
     
+    $routeProvider.when('/first', {
+       templateUrl: 'templates/first.html',
+        controller: 'example2'
+    });
     
     $routeProvider.when('/second', {
        templateUrl: 'templates/second.html',
