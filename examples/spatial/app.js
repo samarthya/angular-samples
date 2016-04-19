@@ -9,7 +9,7 @@ myApp.controller('spatialController', ['$scope', '$log', 'tokenService', functio
     $log.info("User" + $scope.user);
     //tokenService.callGoogle();
     //tokenService.getToken('myName', 'myPassword', 'someInformation');
-    tokenService.getTokenwithHTTP('admin', 'admin');
+    //tokenService.getTokenwithHTTP('admin', 'admin');
 }]);
 
 myApp.directive('globalCredentials', function () {
@@ -25,7 +25,7 @@ myApp.directive('globalAdaptiveCredentials', function () {
         restrict: 'E',
         templateUrl: 'directives/_adaptive-credentials.html',
         replace: true,
-        controller: 'spatialController',
+        controller: 'adaptiveController',
         compile: function (element, attrs) {
             return {
                 post: function (scope, element, attrs) {

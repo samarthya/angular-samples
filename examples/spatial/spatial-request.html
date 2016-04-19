@@ -18,34 +18,28 @@
 
 <body ng-app="spatial" class="container">
     <div class="page-header">
-        <!--        <return-menu-header menu-name="MyValue"></return-menu-header>-->
         <return-menu-only></return-menu-only>
         
         
-        <section>
-            <!-- Left and right sections here -->
-            <section id="serve" class="left panel panel-default well">Navigation Roots</section>
-            <section id="right" class="right panel panel-warning">Input requests</section>
-        </section>
+        <section class="bottom">
 
-        <section class="bottom well">
-
-            <div>
                 <header>
                     <h3>Global information</h3>
                     <hr/>
                 </header>
-
-                    <div class="panel panel-default well well-lg">
-                        <global-credentials></global-credentials>
-                    </div>
-<!--                    <div ng-if="user.name !== ''">Are you sure, you are {{user.name}}?</div>-->
-            </div>
-
-
+                
             <div class="panel panel-default well">
                 <global-adaptive-credentials></global-adaptive-credentials>
             </div>
+<!--
+                    <div class="panel panel-default well well-lg">
+                        <global-credentials></global-credentials>
+                    </div>
+-->
+<!--                    <div ng-if="user.name !== ''">Are you sure, you are {{user.name}}?</div>-->
+
+
+            
         </section>
         <!-- directive: my-copyright -->
     </div>
@@ -57,11 +51,12 @@
     <script src="../../bower_components/angular-resource/angular-resource.min.js"></script>
     <script src="../../bower_components/angular-base64/angular-base64.js"></script>
     <script src='../directives/js/header.js'></script>
-<!--    <script src="http://localhost:8010/ria/openlayers/OpenLayers.js"></script>-->
-<!--    <script src="http://152.144.219.103:8080/ria/ria.js"></script>-->
+    <script src='../directives/js/footer.js'></script>
+
     <!-- Spectrum Spatial services implementation -->    
     <script src="app.js"></script>
     <script src="./services/spectrum-services.js"></script>
+    <script src="./controllers/adaptive-controller.js"></script>
     <!-- information ends -->
     
 

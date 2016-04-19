@@ -30,3 +30,7 @@ Today I added service script and learned something about angular service's provi
 ### 7th March 2016
 
 Today I created directives, for my simple use case of adding a footer and the navigation bar.
+
+### 18th April 2016
+
+Today I am creating some validation service and a method to accept username and password for a server.

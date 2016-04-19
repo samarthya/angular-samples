@@ -31,6 +31,7 @@ spatialService.config(['$httpProvider', '$resourceProvider', function ($httpProv
     $resourceProvider.defaults.stripTrailingSlashes = true;
 }]);
 
+
 /**
  * The $http service is a core Angular service that facilitates communication with the remote HTTP servers via the browser's 
  * XMLHttpRequest object or via JSONP.
@@ -148,7 +149,8 @@ spatialService.service('tokenService', function ($log, $http, $resource, $base64
                 "Authorization": "Basic YWRtaW46YWRtaW4="
             }
         };
-
+        
+       
 
         $http.get("http://152.144.219.103:8080/security/rest/token/access/session/30").then(function success(response) {
             $log.debug(response);
@@ -186,4 +188,44 @@ spatialService.service('tokenService', function ($log, $http, $resource, $base64
         });
 
     };
+    
+     this.listTables = function (auth) {
+
+        $log.info('List all named resources');
+
+        $log.debug("The url that would be called is: " + auth.serverUrl);
+        $log.info('User: ' + auth.name);
+        $log.info('Password: ' + auth.password)
+
+        /** The $http service is a function 
+         * which takes a single argument — a 
+         * configuration object — that is used 
+         * to generate an HTTP request and returns a promise. 
+         */
+        var config = {
+            headers: {
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+            }
+        };
+
+        $http.defaults.headers.get = {};
+        $http.defaults.headers.get.Authorization = "Basic YWRtaW46YWRtaW4=";
+        $http.defaults.headers.get.Accept = '*/*';
+         
+        $http.get(auth.serverUrl + "/rest/Spatial/FeatureService/tables.json;l=en_US").then(function success(response) {
+            $log.debug(response);
+            $log.info('Returned ' + response.status);
+            $log.info('Status ' + response.statusText);
+        }, function failure(response) {
+            $log.error(response);
+            $log.error("Status Code: " + response.status);
+            if (response.statusText != null) {
+                $log.error("Status: " + response.statusText);
+            }
+        });
+
+    };
+
+
+
 });

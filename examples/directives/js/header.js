@@ -32,3 +32,11 @@ myHeader.directive('returnMenuOnly', function () {
         templateUrl: '../directives/return-menu.html'
     }
 })
+
+myHeader.directive('myCopyright', function(){
+    return {
+      restrict: 'ACEM',
+        templateUrl: '../directives/footer-samarthya.html',
+        replace: true
+    };
+});
